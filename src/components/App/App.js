@@ -1,16 +1,14 @@
-import "./App.css";
+import useStyles from "./appStyles";
 import {
-  AppBar,
   Button,
   Container,
   CssBaseline,
   Grid,
-  Toolbar,
-  Typography,
+  Typography
 } from "@material-ui/core";
-import { PhotoCamera } from "@material-ui/icons";
-import PictureCard from "../src/components/PictureCard/PictureCard";
-import useStyles from "./appStyles";
+import MainNav from "../MainNav/MainNav";
+import PictureCardsIndex from "../PictureCard/PictureCardsIndex";
+import Footer from "../Footer.js/Footer";
 
 const App = () => {
   const classes = useStyles();
@@ -19,12 +17,7 @@ const App = () => {
   return (
     <>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <PhotoCamera className={classes.icon} />
-          <Typography variant="h6">Photo Album</Typography>
-        </Toolbar>
-      </AppBar>
+      <MainNav />
       <main>
         <div>
           <Container maxWidth="sm" className={classes.container}>
@@ -61,29 +54,18 @@ const App = () => {
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid}>
+        <PictureCardsIndex cards={cards} />
+        {/* <Container className={classes.cardGrid}>
           <Grid container spacing={4}>
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
-                <PictureCard
-                // description={"App description"}
-                // heading={"App picture card Heading"}
-                // image={}
-                // imageTitle='imageTitle from App'
-                />
+                <PictureCard />
               </Grid>
             ))}
           </Grid>
-        </Container>
+        </Container> */}
       </main>
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary">
-          Copyright 2024 smithWEBtek
-        </Typography>
-      </footer>
+      <Footer />
     </>
   );
 };
