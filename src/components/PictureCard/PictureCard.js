@@ -44,7 +44,7 @@ PictureCard.defaultProps = {
   heading: 'PictureCard heading',
   description: 'PictureCard description',
   image: CatImage,
-  imageTitle: 'PictureCard imageTitle',
+  imageTitle: 'The default Cat',
 }
 
 PictureCard.propTypes = {

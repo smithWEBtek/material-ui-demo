@@ -17,8 +17,7 @@ const Welcome = () => {
           Photo Album
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" paragraph>
-          Hello everyone This is a photo album and I'm trying to make this
-          sentence as long as possible. To see it.
+          This is a photo album, where random photos are displayed. They originate from an API. There is also a default Cat picture in case the API is not working, or there is no internet connection.
         </Typography>
         <div className={classes.buttons}>
           <Grid container spacing={2} justifyContent="center">
