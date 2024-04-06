@@ -1,3 +1,9 @@
+# project for practice 
+### Material UI and React Testing Library
+- inspired by this Youtube video: https://www.youtube.com/watch?v=Xoz31I1FuiY
+- also inspired by my frustration with my skills at MUI and RTL
+- this project contains a default cat photo
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

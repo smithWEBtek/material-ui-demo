@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import PictureCard from "../PictureCard";
 
-describe("<PictureCard /> component", () => {
+describe("renders the PictureCard component", () => {
   test("renders the PictureCard heading", () => {
     render(<PictureCard />);
     const pictureCardElement = screen.getByRole("heading");
