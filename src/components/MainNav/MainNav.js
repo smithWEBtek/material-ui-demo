@@ -1,7 +1,18 @@
 import React from "react";
-import { AppBar, Button, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Button, makeStyles, Toolbar, Typography } from "@material-ui/core";
 import { PhotoCamera } from "@material-ui/icons";
-import useStyles from "./MainNavStyles";
+
+const useStyles = makeStyles(() => ({
+  icon: {
+    marginRight: "20px",
+  },
+  button: {
+    background: 'lightblue',
+    color: 'black',
+    margin: '8px',
+    width: 'auto'    
+  }
+}));
 
 const MainNav = () => {
   const classes = useStyles();
