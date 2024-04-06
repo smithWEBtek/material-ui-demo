@@ -5,7 +5,7 @@ import { Typography } from "@material-ui/core";
 const Footer = () => {
   const classes = useStyles();
   return (
-    <footer className={classes.footer}>
+    <footer className={classes.footer} data-testid="footer">
       <Typography variant="h6" align="center" gutterBottom>
         Updated Footer
       </Typography>

@@ -16,7 +16,7 @@ describe("renders the PictureCard component", () => {
 
   test("renders the default image title", () => {
     render(<PictureCard />);
-    const cat = screen.getByTitle("PictureCard imageTitle"); // finds first one, returns it
+    const cat = screen.getByTitle("The default Cat"); // finds first one, returns it
     expect(cat).toBeInTheDocument();
   });
 
