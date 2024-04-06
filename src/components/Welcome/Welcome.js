@@ -1,6 +1,19 @@
 import React from "react";
 import { Button, Container, Grid, Typography } from "@material-ui/core";
-import useStyles from "./WelcomeStyles";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  container: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(8, 0, 6),
+  },
+  icon: {
+    marginRight: "20px",
+  },
+  buttons: {
+    marginTop: "40px",
+  }
+}));
 
 const Welcome = () => {
   const classes = useStyles();

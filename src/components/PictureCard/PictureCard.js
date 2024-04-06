@@ -8,8 +8,30 @@ import {
   CardMedia,
   Typography,
 } from "@material-ui/core";
-import useStyles from "./PictureCardStyles";
+import { makeStyles } from "@material-ui/core/styles";
 import CatImage from "../../media/image/cat-test.jpeg";
+
+const useStyles = makeStyles((theme) => ({
+  container: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(8, 0, 6),
+  },
+  icon: {
+    marginRight: "20px",
+  },
+  buttons: {
+    marginTop: "40px",
+  },
+  card: {
+    height: "100%",
+  },
+  cardContent: {
+    flexGrow: 1,
+  },
+  cardMedia: {
+    paddingTop: "56.35%", // aspect ratio 16x9
+  }
+}));
 
 const PictureCard = ({ heading, description, image, imageTitle }) => {
   const classes = useStyles();
