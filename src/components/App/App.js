@@ -1,6 +1,6 @@
 import { CssBaseline } from "@material-ui/core";
 import MainNav from "../MainNav/MainNav";
-import PictureCardsIndex from "../PictureCard/PictureCardsIndex";
+import PictureCardsIndex from "../PictureCardsIndex/PictureCardsIndex";
 import Footer from "../Footer.js/Footer";
 import Welcome from "../Welcome/Welcome";
 import DietForm from "../Forms/DietForm";
