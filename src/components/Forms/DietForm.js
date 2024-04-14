@@ -1,6 +1,6 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
+import {makeStyles} from "@material-ui/core/styles";
+import {Typography} from "@material-ui/core";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 // import FormHelperText from "@material-ui/core/FormHelperText";
@@ -30,8 +30,8 @@ const DietForm = () => {
       <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
         Diet Form
       </Typography>
-      <FormControl className={classes.formControl}>
-        <InputLabel id="demo-simple-select-label">Entree</InputLabel>
+      <FormControl className={classes.formControl} variant="outlined">
+        {/* <InputLabel id="demo-simple-select-label">Entree</InputLabel> */}
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
